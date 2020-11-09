@@ -533,7 +533,7 @@ Simple lighting models of a 3D scene involves at least:
 2. Placing one or more light sources in the space
 3. Defining their parameters, such as type (point, spotlight) and color (diffuse, specular)
 
-Assumption: light source that light equally in all directions
+Assumption: light source emits light equally in all directions
 <!-- .element: class="fragment" data-fragment-index="1"-->
 
 H:
