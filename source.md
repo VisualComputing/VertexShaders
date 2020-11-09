@@ -369,7 +369,7 @@ V:
 
 > Geometry operation operands should be defined in the same coordinate system
 
-<li class="fragment"> Tip 1: ```transform * vertex // projection * modelview * vertex``` yields the vertex coordinates in [clip-space](http://www.songho.ca/opengl/gl_transform.html)
+<li class="fragment"> Tip 1: ```transform * vertex // projection * modelview * vertex``` yields the vertex coordinates in [clip-space](http://visualcomputing.github.io/Transformations/#/6/8) (see also [this](http://www.songho.ca/opengl/gl_transform.html))
 <li class="fragment"> Tip 2: ```modelview * vertex``` yields the vertex coordinates in eye-space
 <li class="fragment"> Tip 3: Since the eye position is 0 in eye-space, eye-space is the usual coordinate system for geometry operations
 
@@ -400,7 +400,7 @@ varying vec4 vertColor;
 void main() {
   // Pattern 2: data among shaders
   vertColor = color;
-  // Patter 3: consistency of geometry operations
+  // Pattern 3: consistency of geometry operations
   // gl_Position should be defined in clipspace
   gl_Position = transform * position;
 }
