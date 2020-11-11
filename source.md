@@ -304,7 +304,7 @@ V:
 
 | Processing methods                                                    | Type        | Uniform         |
 |-----------------------------------------------------------------------|:-----------:|:---------------:|
-| `orhto()`, `perspective()`                                            | `mat4`      | `projection`    |
+| `ortho()`, `perspective()`                                            | `mat4`      | `projection`    |
 | `applyMatrix()`, `translate()`,<br>  `rotate()`, `scale()`            | `mat4`      | `modelview`     |
 | `applyMatrix()`, `translate()`,<br>  `rotate()`, `scale()`            | `mat3`      | `normalMatrix`  |
 
@@ -786,9 +786,12 @@ V:
 
 Tasks
 
-1. Combine all the simple lighting models using per-vertex and per-pixel shaders
-2. Use up to 8 lights in the model
-3. Implement other simple light model such as [normal mapping]() or [Warn lights](https://books.google.com.co/books?id=pCwwxlMuNycC&pg=PA113&lpg=PA113&dq=shader+warn+light+model&source=bl&ots=vVu814VVAU&sig=nKGlD6fpT6pl5U1GUcdhIJxEQQQ&hl=en&sa=X&ved=0ahUKEwipp_bQ9e3TAhVEPiYKHS5wC3wQ6AEIJTAA#v=onepage&q=shader%20warn%20light%20model&f=false)
+1. Add ambient light
+2. Add [light attenuation](http://learnwebgl.brown37.net/09_lights/lights_attenuation.html)
+3. Add [fog](https://webglfundamentals.org/webgl/lessons/webgl-fog.html)
+4. Combine all the simple lighting models (ambient, diffuse and specular) using per-vertex and per-pixel shaders
+5. Use up to 8 lights in the model, relating each light source with a [nub node](https://visualcomputing.github.io/nub-javadocs/nub/core/Node.html)
+6. Implement advanced lighting models such as [Warn lights](https://books.google.com.co/books?id=pCwwxlMuNycC&pg=PA113&lpg=PA113&dq=shader+warn+light+model&source=bl&ots=vVu814VVAU&sig=nKGlD6fpT6pl5U1GUcdhIJxEQQQ&hl=en&sa=X&ved=0ahUKEwipp_bQ9e3TAhVEPiYKHS5wC3wQ6AEIJTAA#v=onepage&q=shader%20warn%20light%20model&f=false), [normal mapping](https://en.wikipedia.org/wiki/Normal_mapping) and [shadow mapping](https://en.wikipedia.org/wiki/Shadow_mapping).
 
 H:
 
