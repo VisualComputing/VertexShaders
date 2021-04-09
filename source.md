@@ -650,7 +650,7 @@ void main() {
 
 V:
 
-## Light shaders: per-vertex diffuse light
+## Light shaders: per-pixel diffuse light
 ### Design patterns
 
 <figure>
@@ -660,7 +660,7 @@ V:
 
 V:
 
-## Light shaders: per-vertex diffuse light
+## Light shaders: per-pixel diffuse light
 ### Design patterns
 
 > Pattern 1: Data sent from the sketch to the shaders
@@ -678,7 +678,7 @@ attribute vec3 normal;
 
 V:
 
-## Light shaders: per-vertex diffuse light
+## Light shaders: per-pixel diffuse light
 ### Design patterns
 
 > Pattern 2: Passing data among shaders
@@ -702,7 +702,7 @@ void main() {
 
 V:
 
-## Light shaders: per-vertex diffuse light
+## Light shaders: per-pixel diffuse light
 ### Design patterns
 
 > Pattern 2: Passing data among shaders
